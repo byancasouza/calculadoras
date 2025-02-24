@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. */
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #46da53d8,#299200da);
+}
+
+.calculadora{
+    background-color: #262626;
+    color: #e5e7eb;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-container{
+    margin: 20px 0px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input{
+    background-color: #343434;
+    color: #e5e7eb;
+    padding: 8px;
+    border: 1px solid #46da53d8;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-group input:focus-visible{
+    outline: transparent;
+}
+
+.input-group span{
+    background-color: #343434;
+    padding: 0px 15px;
+}
+
+.input-group p{
+    background: linear-gradient(120deg, #46da53d8,#299200da);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+}
+
+.input-text{
+    margin: 15px 0px;
+    color: #e5e7eb;
+}
+
+#calculate{
+    background: linear-gradient(120deg, #46da53d8,#299200da);;
+    border: none;
+    color: #e5e7eb;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Funnel+Display:wght@300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&family=Rubik+80s+Fade&family=Rubik+Pixels&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e6e6e6;
+    padding: 12px 20px;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+}
+
+.navbar .sobre::before{
+   background-color: rgb(0, 0, 0);
+}
+
+.navbar .simples::before{
+    background-color: rgb(4, 0, 255);
+}
+
+.navbar .imc::before{
+    background-color: rgb(209, 224, 0);
+}
+
+.navbar .regra::before{
+    background-color: rgb(255, 0, 0);
+}
+
+.navbar .juros::before{
+    background-color: rgb(0, 163, 22);
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/* Estilos para o menu sanduíche */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.font{
+    color: #025bff;
+    margin-top: 150px;
+    font-size: 90px;
+    margin-left: 30px;
+}
+
+.slogan{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.img_calc{
+    width: 30%;
+    margin-right: -100px;
+}
+
+.inicial{
+    float: left;
+    flex-direction: row;
+
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+    margin-top: 100px;
+}
+
+.card{
+    position: relative;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.icone {
+    position: absolute;
+    padding: 10px;
+    top: -30px; /* Move o ícone para cima */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 80px;
+    color: white;
+}
+
+.azul{
+    background-color: #8fb6ff8f;
+}
+
+.icon_azul{
+    background-color: #025bff; /* Opcional: um fundo branco para destacar */
+}
+
+.vermelho{
+    background-color: #ff8f8f8f;
+}
+
+.icon_vermelho{
+    background-color: #ff0202; /* Opcional: um fundo branco para destacar */
+}
+
+.verde{
+    background-color: #8fffa28f;
+}
+
+.icon_verde{
+    background-color: #00d423; /* Opcional: um fundo branco para destacar */
+}
+
+.amarelo{
+    background-color: #fffd8f8f;
+}
+
+.icon_amarelo{
+    background-color: #d9ff02; /* Opcional: um fundo branco para destacar */
+}
+
+h2{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.central{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sec_sobre{
+    background-color: #ececec;
+    padding: 20px;
+    margin-top: 20px;
+   
+}
+
+.p_cards{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.video{
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Estilos padrões */
+.contato {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.conta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.p_conta {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.botoes a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.botoes{
+    background-color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.botoes i {
+    margin-right: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .conta {
+        align-items: center;
+    }
+
+    .p_conta {
+        font-size: 16px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .botoes {
+        margin-right: 10px;
+    }
+}
+
+
+footer {
+    background-color: #ececec;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #025bff;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #025bff;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+        color: #e6e6e6;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #025bff;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .font{
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .font{
+        font-size: 32px;
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .slogan{
+        font-size: 20px;
+        max-width: 60%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .inicial{
+        float: none;
+        flex-direction: row;
+    }
+
+    .img_calc{
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .card{
+       margin-left: 0;
+       padding: 2px;
+       width: 300px;
+    }
+
+    .container{
+        margin-top: 100px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-top: 80px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .central{
+        max-width: 80%;
+        margin-left: 50px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+
+    .contato {
+        padding: 15px;
+    }
+
+    .conta {
+        gap: 10px;
+    }
+
+    .p_conta {
+        font-size: 14px;
+    }
+
+    .botoes i {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
